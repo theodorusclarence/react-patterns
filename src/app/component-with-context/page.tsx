@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import * as React from 'react';
 
+import DemoBlock from '@/components/DemoBlock';
 import PatternHeader from '@/components/PatternHeader';
 
 import {
@@ -24,15 +25,17 @@ export default function ComponentContextPage() {
         subtitle='Component that shares some UI states could benefit react context.'
       />
 
-      <div className='w-full max-w-96 mt-8'>
-        <HidableCard className='flex justify-between items-start'>
-          <div className='space-y-1'>
-            <HidableCardTitle>Card Title</HidableCardTitle>
-            <HidableCardSubtitle>Card Subtitle</HidableCardSubtitle>
-          </div>
-          <HidableCardHideButton />
-        </HidableCard>
-      </div>
+      <DemoBlock className='mt-8 flex flex-col items-center py-20'>
+        <div className='w-full max-w-96'>
+          <HidableCard className='flex justify-between items-start'>
+            <div className='space-y-1'>
+              <HidableCardTitle>Card Title</HidableCardTitle>
+              <HidableCardSubtitle>Card Subtitle</HidableCardSubtitle>
+            </div>
+            <HidableCardHideButton />
+          </HidableCard>
+        </div>
+      </DemoBlock>
     </main>
   );
 }

@@ -9,6 +9,7 @@ import UnderlineLink from '@/components/links/UnderlineLink';
 
 const patterns = {
   '/component-with-context': 'Component With Context',
+  '/function-as-child': 'Function as Child',
 };
 
 export default function HomePage() {
@@ -31,9 +32,11 @@ export default function HomePage() {
           <div className='mt-8 space-y-2 flex flex-col'>
             <p className='font-semibold text-sm'>Patterns:</p>
             {Object.entries(patterns).map(([path, title]) => (
-              <PrimaryLink className='text-sm' key={path} href={path}>
-                {title}
-              </PrimaryLink>
+              <li className='list-disc' key={path}>
+                <PrimaryLink className='text-sm text-left block' href={path}>
+                  {title}
+                </PrimaryLink>
+              </li>
             ))}
           </div>
 

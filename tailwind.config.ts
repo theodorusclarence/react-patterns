@@ -45,10 +45,15 @@ export default {
             backgroundPosition: '700px 0',
           },
         },
+        waving: {
+          '0%, 100%': { transform: 'rotate(0deg)' },
+          '50%': { transform: 'rotate(50deg)' },
+        },
       },
       animation: {
         flicker: 'flicker 3s linear infinite',
         shimmer: 'shimmer 1.3s linear infinite',
+        waving: 'waving 1.5s ease infinite',
       },
     },
   },

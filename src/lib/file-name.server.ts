@@ -1,6 +1,6 @@
 export function getFilePath() {
   const file = __filename.split('.next/server/app')[1];
-  return file;
+  return file.replace('.js', '.tsx');
 }
 
 export function getCurrentGithubLink() {

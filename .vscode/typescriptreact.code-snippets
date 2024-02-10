@@ -84,9 +84,9 @@
     "body": [
       "import { Metadata } from 'next';",
       "import * as React from 'react';\n",
-      "export const metadata: Metadata = {"
-      "  title: '${1:${TM_FILENAME_BASE/(^[a-zA-Z])(.*)/${1:/upcase}${2}/}}',"
-      "};\n"
+      "export const metadata: Metadata = {",
+      "  title: '${1:${TM_FILENAME_BASE/(^[a-zA-Z])(.*)/${1:/upcase}${2}/}}',",
+      "};\n",
       "export default function ${1:${TM_FILENAME_BASE/(^[a-zA-Z])(.*)/${1:/upcase}${2}/}}Page() {",
       "  return (",
       "      <main>",

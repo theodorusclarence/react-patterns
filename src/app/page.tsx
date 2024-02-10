@@ -11,6 +11,7 @@ const patterns = {
   '/component-with-context': 'Component With Context',
   '/function-as-child': 'Function as Child',
   '/forward-ref': 'Forward Ref',
+  '/higher-order-component': 'Higher Order Component',
 };
 
 export default function HomePage() {

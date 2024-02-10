@@ -10,6 +10,7 @@ import UnderlineLink from '@/components/links/UnderlineLink';
 const patterns = {
   '/component-with-context': 'Component With Context',
   '/function-as-child': 'Function as Child',
+  '/forward-ref': 'Forward Ref',
 };
 
 export default function HomePage() {

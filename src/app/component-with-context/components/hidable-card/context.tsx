@@ -29,7 +29,7 @@ export const useHidableCardContext = () => {
 
   if (!context) {
     throw new Error(
-      'useHidableCardContext must be used inside the TodoProvider'
+      'useHidableCardContext must be used inside the HidableCardContextProvider'
     );
   }
 
